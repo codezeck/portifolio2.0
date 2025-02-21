@@ -111,7 +111,7 @@ body{
     color: var(--cor-azul);
     margin-bottom: 20px;
     padding-top: 30px;
-    font-size: 30px;
+    font-size: 2em;
 }
 
 .grid-container p{
