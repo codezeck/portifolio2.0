@@ -11,7 +11,7 @@
     padding: 0px;
     color: white;
 }
-body{
+.fundo-imagem{
     width: 100%;
     height: 100vh;
     background: url('../assets/fundo.png') center center / cover no-repeat;
@@ -86,6 +86,10 @@ body{
     transform: translateY(5px);
 }
 
+.navegation > .navegation-div > span > a {
+    text-decoration: none;
+}
+
 main{
     display: flex;
     margin: 65px auto auto auto;
@@ -106,12 +110,14 @@ main > .container-main {
     font-size: 42px;
     font-family: var(--fonte-principal);
     padding: 0px 0px 0px 10px;
+    margin-bottom: 5px;
 }
 
 .container-main h2{
     font-size: 27px;
     font-family: var(--fonte-principal);
     padding: 0px 0px 0px 10px;
+    margin-bottom: -5px;
 
     strong{
         color: #00EEFF;
@@ -122,6 +128,7 @@ main > .container-main {
     font-family: var(--fonte-principal);
     width: 500px;
     padding: 10px;
+    line-height: 23px;
 }
 
 .main {
