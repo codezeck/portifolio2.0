@@ -10,6 +10,7 @@
     margin: 0px;
     padding: 0px;
     font-family: var(--fonte-principal);
+    
 }
 
 body{
@@ -140,9 +141,15 @@ body{
     border-radius: 30px;
     margin: 22px 0px 0px 0px;
     cursor: pointer;
+    transition: 0.3s;
 
     a{
         text-decoration: none;
+        color: black;
     }
+}
+
+.container-conteudo button:hover{
+    transform: scale(1.2);
 }
 

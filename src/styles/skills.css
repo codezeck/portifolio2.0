@@ -1,0 +1,149 @@
+@charset "UTF-8";
+
+:root {
+    --fonte-principal: "Montserrat", serif;
+    --fonte-secundaria: Arial, Helvetica, sans-serif;
+    --cor-azul: #00EEFF;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: var(--fonte-principal);
+    line-height: 23px;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    background-color: #1F242D;
+}
+
+.section-nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.div-logo{
+    width:20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.div-logo > a {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%; 
+    font-family: var(--fonte-principal);
+    text-decoration: none;
+    color: white;
+}
+
+.div-logo > a > img {
+    margin: 5px auto auto auto;
+    width: 33px;
+    padding: 12px 0px 0px 0px;
+}
+
+.div-logo > a > span {
+    font-size: 23px;
+    margin: 25px 0px 0px 7px;
+}
+
+.navegation {
+    width: 50%;
+    
+}
+
+.navegation > .navegation-div{
+    display: flex;
+    justify-content: space-around;
+    color: rgb(221, 221, 221);
+    margin-top: 30px;
+    font-family: var(--fonte-secundaria);
+}
+
+.navegation > .navegation-div > span{
+    padding: 5px;
+    transition: 0.3s;
+    color: white;
+}
+
+.navegation > .navegation-div > span:hover {
+    color: white;
+    cursor: pointer;
+    transform: translateY(5px);
+}
+
+.navegation > .navegation-div > span > a {
+    color: white;
+    text-decoration: none;
+}
+
+.grid-container{
+    width: 60%;
+    background-color: #323946;
+    text-align: center;
+    margin: 55px auto 0px auto;
+    border-radius: 10px;
+}
+
+.grid-container h1{
+    color: var(--cor-azul);
+    margin-bottom: 10px;
+    margin-bottom: 20px;
+    padding-top: 30px;
+}
+
+.grid-container p{
+    width: 700px;
+    color: white;
+    margin: auto;
+    padding: 10px 0px 30px 0px;
+
+    strong{
+        color:  var(--cor-azul);
+    }
+}
+
+.grid-skills {
+    width: 450px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 30px;
+    justify-items: center;
+    padding-bottom: 40px;
+
+}
+
+.grid-skills div{
+    width: 65px;
+    height: 50px;
+    
+    img{
+        width: 50px;
+        margin: auto;
+        color: rgb(177, 177, 177);
+        padding: 3px;
+        transition: 0.3s;
+    }
+}
+
+.desbloqueado{
+    border-radius: 25%;
+}
+
+.desbloqueado:hover{
+    transform: scale(1.3);
+}
+
+.bloqueado{
+    border: 3.5px dashed rgba(177, 177, 177, 0.086);
+    border-radius: 25%;
+}
