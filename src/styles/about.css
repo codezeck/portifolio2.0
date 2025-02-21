@@ -10,13 +10,27 @@
     margin: 0px;
     padding: 0px;
     font-family: var(--fonte-principal);
-    
 }
 
 body{
     width: 100%;
     height: 100vh;
-    background-color: #323946;
+}
+
+.fundo-imagem{
+    width: 100%;
+    height: 100vh;
+    background: url('../assets/fundo.png') center center / cover no-repeat;
+    background-color: rgba(0, 0, 255, 0.37);
+}
+
+.filtro {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #1f242db8;
 }
 
 .section-nav {
@@ -121,6 +135,7 @@ body{
 .container-conteudo h1{
     color: white;
     margin-bottom: 35px;
+    font-size: 2em;
 
     span{
         color: var(--cor-azul);
