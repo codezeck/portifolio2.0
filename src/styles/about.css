@@ -6,18 +6,18 @@
     --cor-azul: #00EEFF;
 }
 
-*{
-    margin: 0px;
-    padding: 0px;
+* {
+    margin: 0;
+    padding: 0;
     font-family: var(--fonte-principal);
 }
 
-body{
+body {
     width: 100%;
     height: 100vh;
 }
 
-.fundo-imagem{
+.fundo-imagem {
     width: 100%;
     height: 100vh;
     background: url('../assets/fundo.png') center center / cover no-repeat;
@@ -37,10 +37,11 @@ body{
     width: 100%;
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
 }
 
-.div-logo{
-    width:20%;
+.div-logo {
+    width: 20%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -52,7 +53,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100%; 
+    height: 100%;
     font-family: var(--fonte-principal);
     text-decoration: none;
     color: white;
@@ -61,20 +62,19 @@ body{
 .div-logo > a > img {
     margin: 5px auto auto auto;
     width: 33px;
-    padding: 12px 0px 0px 0px;
+    padding: 12px 0 0 0;
 }
 
 .div-logo > a > span {
     font-size: 23px;
-    margin: 25px 0px 0px 7px;
+    margin: 25px 0 0 7px;
 }
 
 .navegation {
     width: 50%;
-    
 }
 
-.navegation > .navegation-div{
+.navegation > .navegation-div {
     display: flex;
     justify-content: space-around;
     color: rgb(221, 221, 221);
@@ -82,7 +82,7 @@ body{
     font-family: var(--fonte-secundaria);
 }
 
-.navegation > .navegation-div > span{
+.navegation > .navegation-div > span {
     padding: 5px;
     transition: 0.3s;
     color: white;
@@ -101,70 +101,116 @@ body{
 
 .container-about {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 20px;
+    margin-top: 7%;
 }
 
 .container-about .container-foto {
-    width: 300px;
-    height: 300px;
+    width: 100%;
+    max-width: 300px;
     flex-direction: column;
-    margin: 14% 0px 0px 18%;
+    margin: 20px 0;
 }
 
 .container-about .container-foto .foto {
-    width: 285px;
-    height: 285px;
+    width: 290px;
+    max-width: 290px;
     font-family: var(--fonte-principal);
     text-align: center;
     border-radius: 8px;
     border: 10px solid var(--cor-azul);
+    height: 290px;
 }
 
 .container-about .container-foto img {
     width: 300px;
-    height: 300px;
+    max-width: 300px;
     border-radius: 7%;
-    margin: -30px 0px 0px 14px;
+    margin: -30px 0 0 0;
+    transform: translate(17px, 3px);
 }
 
-.container-conteudo{
-    width: 36%;
+.container-conteudo {
+    width: 100%;
+    max-width: 600px;
     font-family: var(--fonte-principal);
-    margin: 138px 0px 0px 145px;
+    margin: 20px 0;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: start;
 }
 
-.container-conteudo h1{
+.container-conteudo h1 {
     color: white;
     margin-bottom: 35px;
     font-size: 2em;
-
-    span{
-        color: var(--cor-azul);
-    }
 }
 
-.container-conteudo p{
+.container-conteudo h1 span {
+    color: var(--cor-azul);
+}
+
+.container-conteudo p {
     font-family: var(--fonte-principal);
     color: white;
     margin-bottom: 10px;
-    line-height: 23px;
+    line-height: 1.5;
 }
 
-.container-conteudo button{
+.container-conteudo button {
     background-color: #00EEFF;
     color: black;
     padding: 12px 24px;
     border-radius: 30px;
-    margin: 22px 0px 0px 0px;
+    margin: 22px 0;
     cursor: pointer;
     transition: 0.3s;
-
-    a{
-        text-decoration: none;
-        color: black;
-    }
 }
 
-.container-conteudo button:hover{
+.container-conteudo button:hover {
     transform: scale(1.2);
 }
 
+.container-conteudo button a {
+    text-decoration: none;
+    color: black;
+}
+
+@media (max-width: 768px) {
+    .div-logo {
+        width: 30%;
+    }
+
+    .navegation {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .navegation > .navegation-div {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .container-about {
+        padding: 10px;
+    }
+
+    .container-conteudo {
+        padding: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .div-logo {
+        width: 40%;
+    }
+
+    .navegation > .navegation-div {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+}

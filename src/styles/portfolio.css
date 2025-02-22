@@ -6,19 +6,19 @@
     --cor-azul: #00EEFF;
 }
 
-*{
-    margin: 0px;
-    padding: 0px;
+* {
+    margin: 0;
+    padding: 0;
     font-family: var(--fonte-principal);
     line-height: 23px;
 }
 
-body{
+body {
     width: 100%;
     height: 100vh;
 }
 
-.fundo-imagem{
+.fundo-imagem {
     width: 100%;
     height: 100vh;
     background: url('../assets/fundo.png') center center / cover no-repeat;
@@ -38,10 +38,11 @@ body{
     width: 100%;
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
 }
 
-.div-logo{
-    width:20%;
+.div-logo {
+    width: 20%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -53,7 +54,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100%; 
+    height: 100%;
     font-family: var(--fonte-principal);
     text-decoration: none;
     color: white;
@@ -62,20 +63,19 @@ body{
 .div-logo > a > img {
     margin: 5px auto auto auto;
     width: 33px;
-    padding: 12px 0px 0px 0px;
+    padding: 12px 0 0 0;
 }
 
 .div-logo > a > span {
     font-size: 23px;
-    margin: 25px 0px 0px 7px;
+    margin: 25px 0 0 7px;
 }
 
 .navegation {
     width: 50%;
-    
 }
 
-.navegation > .navegation-div{
+.navegation > .navegation-div {
     display: flex;
     justify-content: space-around;
     color: rgb(221, 221, 221);
@@ -83,7 +83,7 @@ body{
     font-family: var(--fonte-secundaria);
 }
 
-.navegation > .navegation-div > span{
+.navegation > .navegation-div > span {
     padding: 5px;
     transition: 0.3s;
     color: white;
@@ -100,64 +100,118 @@ body{
     text-decoration: none;
 }
 
-.container-portifolio{
+.container-portifolio {
     width: 80%;
-    margin: 25px auto 0px auto;
+    margin: 25px auto 0;
     text-align: center;
 }
 
-.container-portifolio h1{
+.container-portifolio h1 {
     color: var(--cor-azul);
     font-size: 2em;
     padding: 20px;
 }
 
-.container-portifolio p{
-    width: 500px;
+.container-portifolio p {
+    width: 100%;
+    max-width: 500px;
     color: white;
     padding: 10px;
     margin: auto;
 }
 
-.container-portifolio .container-projetos{
+.container-portifolio .container-projetos {
     width: 100%;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 30px;
-    margin: 20px auto 0px auto;
+    margin: 20px auto 0;
 }
 
-.container-projetos div{
+.container-projetos div {
     display: flex;
-    width: 300px;
+    width: 100%;
+    max-width: 300px;
     height: 200px;
-    margin: 0px auto 0px auto;
+    margin: 0 auto;
     transition: 0.3s;
-
-    a{
-        margin: auto;
-    }
-
-    img{
-        margin: auto;
-        color: rgb(177, 177, 177);
-        padding: 3px;
-        border-radius: 4%;
-    }
 }
 
-.desbloqueado, .desbloqueado img{
+.container-projetos div a {
+    margin: auto;
+}
+
+.container-projetos div img {
+    margin: auto;
+    color: rgb(177, 177, 177);
+    padding: 3px;
+    border-radius: 4%;
+}
+
+.desbloqueado,
+.desbloqueado img {
     border-radius: 25%;
     width: 100%;
     height: 100%;
     object-fit: contain;
 }
 
-.desbloqueado:hover{
+.desbloqueado:hover {
     transform: scale(1.1);
 }
 
-.bloqueado{
+.bloqueado {
     border: 3.5px dashed rgba(177, 177, 177, 0.086);
     border-radius: 4%;
+}
+
+@media (max-width: 768px) {
+    .div-logo {
+        width: 30%;
+    }
+
+    .navegation {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .navegation > .navegation-div {
+        align-items: center;
+    }
+
+    .container-portifolio {
+        width: 90%;
+    }
+
+    .container-portifolio p {
+        width: 90%;
+    }
+
+    .container-projetos {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .container-projetos div {
+        height: auto;
+    }
+}
+
+@media (max-width: 480px) {
+    .div-logo {
+        width: 40%;
+    }
+
+    .navegation > .navegation-div {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .container-projetos {
+        grid-template-columns: 1fr;
+    }
+
+    .bloqueado {
+        display: none;
+    }
 }
