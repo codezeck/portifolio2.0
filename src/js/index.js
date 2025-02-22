@@ -1,5 +1,8 @@
 function btnMenu() {
     const nav = document.querySelector('.navegation');
-    nav.style.removeProperty('display');
-    console.log('clicou');
+    if (nav.classList.contains('hidden')) {
+        nav.classList.remove('hidden');
+    } else if (!nav.classList.contains('hidden')){
+        nav.classList.add('hidden');
+    }
 }

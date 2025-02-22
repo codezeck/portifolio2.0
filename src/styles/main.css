@@ -232,19 +232,8 @@ main > .img-avatar img {
         border-bottom: 1px solid var(--cor-azul);
     }
 
-    .navegation {
+    .hidden {
         display: none;
-    }
-
-    .navegation.active {
-        display: block;
-        position: absolute;
-        top: 0;
-        right: 0;
-        background-color: white;
-        width: 200px;
-        height: 100%;
-        box-shadow: -2px 0 5px rgba(0,0,0,0.5);
     }
 
     main {
