@@ -183,6 +183,13 @@ body {
         width: 90%;
     }
 
+    .container-portifolio h1 {
+    margin-top: 10%;
+    color: var(--cor-azul);
+    font-size: 2em;
+    padding: 20px;
+    }
+
     .container-portifolio p {
         width: 90%;
     }
@@ -190,9 +197,36 @@ body {
     .container-projetos {
         grid-template-columns: repeat(2, 1fr);
     }
-
+    
     .container-projetos div {
         height: auto;
+    }
+
+    .container-portifolio .container-projetos {
+        width: 100%;
+        display: flex;
+        grid-gap: 30px;
+        margin: 68px auto 0;
+        flex-direction: row-reverse;
+        flex-wrap: wrap;
+    }
+
+    .container-projetos div {
+        display: flex;
+        width: 101%;
+        max-width: 300px;
+        height: 200px;
+        margin: 0 auto;
+        transition: 0.3s;
+    }
+
+    .container-projetos .bloqueado {
+        display: none;
+        width: 100%;
+        max-width: 300px;
+        height: 200px;
+        margin: 0 auto;
+        transition: 0.3s;
     }
 }
 
