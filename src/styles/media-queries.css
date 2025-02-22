@@ -21,15 +21,16 @@ select:-webkit-autofill {
     line-height: 23px;
 }
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 768px) {
     body{
         width: 100%;
         height: auto;
+        background: url('../assets/fundo.png') center center / cover no-repeat fixed;
+        background-color: #1f242db8;
+        background-color: rgba(0, 0, 255, 0.37);
     }
     .fundo-imagem{
         width: 100%;
-        background: url('../assets/fundo.png') center center / cover no-repeat;
-        background-color: rgba(0, 0, 255, 0.37);
     }
 
     .filtro {
@@ -103,6 +104,12 @@ select:-webkit-autofill {
         width: 215px;
     }
 
+    .img-avatar .sombra {
+        background-color: transparent;
+        width: 90px;
+        box-shadow: 0px 15px 32px 6px var(--cor-azul);
+    }
+
     main > .container-main {
         display: flex;
         justify-content: center;
@@ -141,10 +148,6 @@ select:-webkit-autofill {
         line-height: 23px;
         margin: auto;
     }
-}
-
-@media only screen and (min-width: 481px) and (max-width: 768px) {
-    /* Seu código CSS aqui */
 }
 
 @media only screen and (min-width: 769px) and (max-width: 1024px) {
