@@ -90,6 +90,10 @@
     text-decoration: none;
 }
 
+#menu-toggle {
+    display: none;
+}
+
 main{
     display: flex;
     margin: 65px auto auto auto;
@@ -110,14 +114,14 @@ main > .container-main {
     font-size: 42px;
     font-family: var(--fonte-principal);
     padding: 0px 0px 0px 10px;
-    margin-bottom: 5px;
+    margin-bottom: 25px;
 }
 
 .container-main h2{
     font-size: 27px;
     font-family: var(--fonte-principal);
     padding: 0px 0px 0px 10px;
-    margin-bottom: -5px;
+    margin-bottom: 2px;
 
     strong{
         color: #00EEFF;
