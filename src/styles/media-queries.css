@@ -151,6 +151,16 @@ select:-webkit-autofill {
         line-height: 23px;
         margin: auto;
     }
+
+    .container-main button {
+        background-color: #00EEFF;
+        color: black;
+        padding: 12px 20px;
+        border-radius: 30px;
+        margin: 2px 10px 40px 9px;
+        cursor: pointer;
+        transition: 0.3s;
+    }
 }
 
 @media only screen and (min-width: 769px) and (max-width: 1024px) {
