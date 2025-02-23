@@ -213,10 +213,11 @@ main > .img-avatar img {
         position: absolute;
         top: 60px;
         right: 0;
-        background: linear-gradient(to bottom, #63636300, #363636b5);
+        background: linear-gradient(to bottom, #36363621, #1E2930);
         width: 40%;
         height: 26%;
         border-radius: 0px 0px 15px 15px;
+        z-index: 10;
     }
 
     .navegation > .navegation-div {

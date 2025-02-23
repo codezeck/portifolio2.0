@@ -246,59 +246,61 @@ button:hover {
 }
 
 @media (max-width: 768px) {
+    .div-logo {
+        width: 44%;
+        padding-right: 100px;
+    }
+
     .navegation {
-        width: 100%;
-        margin-top: 20px;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        background: linear-gradient(to bottom, #63636300, #363636b5);
+        width: 40%;
+        height: 26%;
+        border-radius: 0px 0px 15px 15px;
     }
 
     .navegation > .navegation-div {
-        align-items: center;
-    }
-
-    .container-contato {
         display: flex;
         flex-direction: column;
-        margin: auto;
+        align-items: center;
+        width: 100%;
+        margin: 0px;
+    }
+
+    .navegation > .navegation-div > span {
+        padding: 5px;
+        transition: 0.3s; 
+        margin: 8px 0;
+    }
+
+    .navegation > .navegation-div > span:hover{
+        border-bottom: 1px solid var(--cor-azul);
+    }
+
+    .hidden {
+        display: none;
+    }
+
+    main {
+        display: flex;
+        margin: 0px auto 0px auto;
+        padding: 0px;
+        flex-wrap: wrap;
+        flex-direction: column-reverse;
         align-items: center;
     }
 
-    .container-contato .contato, .container-contato .formulário {
-        width: 100%;
+    #menu-toggle{
+        display: block;
+        background-color: #ffffff00;
+        border: 0px;
+        width: 66px;
+        margin: 6px 0px 0px 0px;
     }
 
-    .container-contato .contato {
-        max-width: 96%;
-        text-align: center;
-        padding: 10px;
-    }
-
-    .contato p {
-        width: 100%;
-        max-width: 700px;
-        display: flex;
-        color: white;
-        margin: 40px auto 60px auto;
-    }
-
-    .contato .div-logo {
-        display: none;
-        margin: 10px auto 0;
-        padding: 30px;
-    }
-
-    .formulário {
-        width: 100%;
-        max-width: 75%;
-        display: flex;
-        padding: 10px;
-        margin: 4%;
-    }
-
-    form {
-        width: 90%;
-    }
-
-    input, textarea {
-        padding: 8px;
+    #menu-toggle img {
+        width: 52px;
     }
 }

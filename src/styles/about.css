@@ -181,23 +181,126 @@ body {
 
 @media (max-width: 768px) {
     .div-logo {
-        width: 30%;
+        width: 44%;
+        padding-right: 100px;
     }
 
     .navegation {
-        width: 100%;
-        margin-top: 20px;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        background: linear-gradient(to bottom, #36363621, #1E2930);
+        width: 40%;
+        height: 26%;
+        border-radius: 0px 0px 15px 15px;
+        z-index: 10;
     }
 
     .navegation > .navegation-div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        margin: 0px;
+    }
+
+    .navegation > .navegation-div > span {
+        padding: 5px;
+        transition: 0.3s; 
+        margin: 8px 0;
+    }
+
+    .navegation > .navegation-div > span:hover{
+        border-bottom: 1px solid var(--cor-azul);
+    }
+
+    .hidden {
+        display: none;
+    }
+
+    main {
+        display: flex;
+        margin: 0px auto 0px auto;
+        padding: 0px;
+        flex-wrap: wrap;
+        flex-direction: column-reverse;
         align-items: center;
     }
 
+    #menu-toggle{
+        display: block;
+        background-color: #ffffff00;
+        border: 0px;
+        width: 66px;
+        margin: 6px 0px 0px 0px;
+    }
+
+    #menu-toggle img {
+        width: 52px;
+    }
+    
     .container-about {
-        padding: 10px;
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-evenly;
+        align-items: center;
+        padding: 0px;
+        margin-top: 7%;
+        flex-direction: column;
+    }
+
+    .container-about .container-foto {
+        width: 100%;
+        max-width: 300px;
+        flex-direction: column;
+        margin: 20px 0;
+        display: flex;
+        align-items: center;
+    }
+
+    .container-about .container-foto .foto {
+        width: 130px;
+        max-width: 130px;
+        font-family: var(--fonte-principal);
+        text-align: center;
+        border-radius: 8px;
+        border: 10px solid var(--cor-azul);
+        height: 130px;
+    }
+
+    .container-about .container-foto img {
+        width: 145px;
+        max-width: 175px;
+        border-radius: 7%;
+        margin: -30px 0 0 0;
+        transform: translate(10px, 4px);
     }
 
     .container-conteudo {
-        padding: 10px;
+        width: 100%;
+        max-width: 600px;
+        font-family: var(--fonte-principal);
+        margin: 20px 0;
+        display: flex;
+        flex-wrap: wrap;
+        text-align: center;
+    }
+
+    .container-conteudo h1 {
+        color: white;
+        margin-bottom: 15px;
+        font-size: 2em;
+        margin: 0px auto 15px auto;
+    }
+
+    .container-conteudo button {
+        background-color: #00EEFF;
+        color: black;
+        padding: 12px 24px;
+        border-radius: 30px;
+        margin: 22px 0;
+        cursor: pointer;
+        transition: 0.3s;
+        margin: 15px auto 0px auto;
     }
 }

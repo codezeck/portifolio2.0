@@ -165,41 +165,60 @@ body {
 
 @media (max-width: 768px) {
     .div-logo {
-        width: 30%;
+        width: 44%;
+        padding-right: 100px;
     }
 
     .navegation {
-        width: 100%;
-        margin-top: 20px;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        background: linear-gradient(to bottom, #63636300, #363636b5);
+        width: 40%;
+        height: 26%;
+        border-radius: 0px 0px 15px 15px;
     }
 
     .navegation > .navegation-div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        margin: 0px;
+    }
+
+    .navegation > .navegation-div > span {
+        padding: 5px;
+        transition: 0.3s; 
+        margin: 8px 0;
+    }
+
+    .navegation > .navegation-div > span:hover{
+        border-bottom: 1px solid var(--cor-azul);
+    }
+
+    .hidden {
+        display: none;
+    }
+
+    main {
+        display: flex;
+        margin: 0px auto 0px auto;
+        padding: 0px;
+        flex-wrap: wrap;
+        flex-direction: column-reverse;
         align-items: center;
     }
 
-    .grid-container {
-        width: 80%;
-    }
-    
-    .grid-container h1 {
-        color: var(--cor-azul);
-        margin-bottom: 70px;
-        padding-top: 30px;
-        font-size: 2em;
+    #menu-toggle{
+        display: block;
+        background-color: #ffffff00;
+        border: 0px;
+        width: 66px;
+        margin: 6px 0px 0px 0px;
     }
 
-    .grid-container p {
-        width: 90%;
-    }
-
-    .grid-skills {
-        width: 100%;
-        max-width: 450px;
-        margin: 55px auto 0px auto;
-        display: grid;
-        grid-template-columns: repeat(5, 1fr);
-        gap: 30px;
-        justify-items: center;
-        padding-bottom: 40px;
+    #menu-toggle img {
+        width: 52px;
     }
 }
