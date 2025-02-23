@@ -1,16 +1,68 @@
-/* arquivo de media queries globais */
-@charset "UTF-8";
-
-:root {
-    --fonte-principal: "Montserrat", serif;
-    --fonte-secundaria: Arial, Helvetica, sans-serif;
-    --cor-azul: #00EEFF;
+.section-nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
 }
 
-* {
-    margin: 0;
-    padding: 0;
+.div-logo {
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.div-logo > a {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    font-family: var(--fonte-principal);
+    text-decoration: none;
+}
+
+.div-logo > a > img {
+    margin: 5px auto auto auto;
+    width: 33px;
+    padding: 12px 0px 0px 0px;
+}
+
+.div-logo > a > span {
+    font-size: 23px;
+    margin: 25px 0px 0px 7px;
+}
+
+.navegation {
+    width: 50%;
+}
+
+.navegation > .navegation-div {
+    display: flex;
+    justify-content: space-around;
+    color: rgb(221, 221, 221);
+    margin-top: 30px;
+    font-family: var(--fonte-secundaria);
+}
+
+.navegation > .navegation-div > span {
+    padding: 5px;
+    transition: 0.3s;
+}
+
+.navegation > .navegation-div > span:hover {
     color: white;
+    cursor: pointer;
+    transform: translateY(5px);
+}
+
+.navegation > .navegation-div > span > a {
+    text-decoration: none;
+}
+
+#menu-toggle {
+    display: none;
 }
 
 /* Large screens */
@@ -36,30 +88,6 @@
         margin: 30px 70px 0px 0px;
         font-family: var(--fonte-secundaria);
     }
-
-    main {
-        margin: 100px auto auto auto;
-    }
-
-    main > .container-main {
-        max-width: 600px;
-    }
-
-    main > .img-avatar {
-        max-width: 600px;
-    }
-
-    .container-main h1 {
-        font-size: 3rem;
-    }
-
-    .container-main h2 {
-        font-size: 2rem;
-    }
-
-    .container-main p {
-        font-size: 1.1rem;
-    }
 }
 
 /* Medium screens (tablets in landscape) */
@@ -79,18 +107,6 @@
         height: 100%;
     }
 
-    #menu-toggle {
-        display: block;
-        background-color: #ffffff00;
-        border: 0px;
-        width: 66px;
-        margin: 6px 70px 0px 0px;
-    }
-
-    #menu-toggle {
-        display: none;
-    }
-
     .navegation {
         width: 55%;
     }
@@ -106,18 +122,6 @@
     .navegation > .navegation-div > span {
         padding: 5px;
         transition: 0.3s;
-    }
-
-    main {
-        margin: 70px auto 0;
-    }
-
-    main > .container-main {
-        max-width: 550px;
-    }
-
-    main > .img-avatar {
-        max-width: 550px;
     }
 }
 
@@ -155,36 +159,9 @@
         width: 52px;
     }
 
-    main {
-        display: flex;
-        margin: 0 auto;
-        padding: 0;
-        flex-wrap: wrap;
-        flex-direction: column-reverse;
-        align-items: center;
+    .hidden {
+        display: none;
     }
-
-    main > .img-avatar {
-        width: 85%;
-        max-width: 380px;
-    }
-
-    main > .container-main {
-        width: 100%;
-        max-width: 500px;
-        margin: 30px 0 0;
-    }
-
-    main {
-        display: flex;
-        margin: 0 auto;
-        padding: 0;
-        flex-wrap: wrap;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    
 }
 
 /* Extra small screens (phones in portrait) */
@@ -201,46 +178,26 @@
         width: 100%;
     }
 
+    .navegation {
+        position: absolute;
+        top: 60px;
+        right: 0;
+        background: linear-gradient(to bottom, #36363621, #1E2930);
+        width: 40%;
+        height: 24%;
+        border-radius: 0px 0px 15px 15px;
+        z-index: 10;
+    }
+
     #menu-toggle {
         display: block;
         background-color: #ffffff00;
         border: 0px;
         width: 66px;
-        margin: 5px 10px 0px 0px;
-    }
-
-    #menu-toggle img {
-        width: 52px;
-        margin-top: -5px;
+        margin: -5px 10px 0px 0px;
     }
 
     .navegation > .navegation-div {
         flex-direction: column;
-    }
-
-    main {
-        display: flex;
-        margin: 0 auto;
-        padding: 0;
-        flex-wrap: nowrap;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    main > .container-main h1 {
-        font-size: 2rem;
-    }
-
-    main > .container-main h2 {
-        font-size: 1.2rem;
-    }
-
-    .container-main p {
-        font-size: 0.9rem;
-    }
-
-    .container-main button,
-    .container-main button > a {
-        padding: 10px 15px;
     }
 }
