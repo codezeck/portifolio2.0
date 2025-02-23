@@ -99,6 +99,10 @@ body {
     text-decoration: none;
 }
 
+#menu-toggle {
+    display: none;
+}
+
 .container-about {
     display: flex;
     flex-wrap: wrap;
@@ -191,7 +195,7 @@ body {
         right: 0;
         background: linear-gradient(to bottom, #36363621, #1E2930);
         width: 40%;
-        height: 26%;
+        height: 28%;
         border-radius: 0px 0px 15px 15px;
         z-index: 10;
     }
@@ -205,8 +209,8 @@ body {
     }
 
     .navegation > .navegation-div > span {
-        padding: 5px;
-        transition: 0.3s; 
+        padding: 5px 35px;
+        transition: 0.3s;
         margin: 8px 0;
     }
 
@@ -238,7 +242,7 @@ body {
     #menu-toggle img {
         width: 52px;
     }
-    
+
     .container-about {
         display: flex;
         flex-wrap: nowrap;
@@ -277,7 +281,7 @@ body {
     }
 
     .container-conteudo {
-        width: 100%;
+        width: 90%;
         max-width: 600px;
         font-family: var(--fonte-principal);
         margin: 20px 0;

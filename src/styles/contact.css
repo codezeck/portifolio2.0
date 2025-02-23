@@ -108,6 +108,10 @@ body {
     text-decoration: none;
 }
 
+#menu-toggle {
+    display: none;
+}
+
 main {
     margin: 70px auto 0;
 }
@@ -255,10 +259,11 @@ button:hover {
         position: absolute;
         top: 60px;
         right: 0;
-        background: linear-gradient(to bottom, #63636300, #363636b5);
+        background: linear-gradient(to bottom, #36363621, #1E2930);
         width: 40%;
-        height: 26%;
+        height: 28%;
         border-radius: 0px 0px 15px 15px;
+        z-index: 10;
     }
 
     .navegation > .navegation-div {
@@ -270,8 +275,8 @@ button:hover {
     }
 
     .navegation > .navegation-div > span {
-        padding: 5px;
-        transition: 0.3s; 
+        padding: 5px 35px;
+        transition: 0.3s;
         margin: 8px 0;
     }
 
@@ -281,15 +286,6 @@ button:hover {
 
     .hidden {
         display: none;
-    }
-
-    main {
-        display: flex;
-        margin: 0px auto 0px auto;
-        padding: 0px;
-        flex-wrap: wrap;
-        flex-direction: column-reverse;
-        align-items: center;
     }
 
     #menu-toggle{
@@ -302,5 +298,63 @@ button:hover {
 
     #menu-toggle img {
         width: 52px;
+    }
+
+    main {
+        display: flex;
+        margin: 0px auto 0px auto;
+        padding: 0px;
+        flex-wrap: nowrap;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    main h1 {
+        color: var(--cor-azul);
+        font-size: 2em;
+        text-align: center;
+        margin: 35px 0px 40px 0px;
+    }
+
+    .container-contato {
+        width: 100%;
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: column;
+        align-items: center;
+        margin: 0px;
+    }
+
+    .container-contato .contato {
+        width: 100%;
+        max-width: 87%;
+        text-align: center;
+        padding: 10px;
+    }
+
+    .container-contato .contato .div-logo{
+        display: none;
+    }
+
+    .formulário {
+        width: 100%;
+        max-width: 90%;
+        display: flex;
+        padding: 10px;
+    }   
+
+    .formulário button {
+        width: 95%;
+        max-width: 385px;
+        padding: 12px 0;
+        background-color: var(--cor-azul);
+        color: black;
+        border: none;
+        border-radius: 30px;
+        cursor: pointer;
+        transition: 0.3s;
+        margin: auto;
+        display: flex;
+        justify-content: center;
     }
 }

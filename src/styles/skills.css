@@ -100,6 +100,10 @@ body {
     text-decoration: none;
 }
 
+#menu-toggle {
+    display: none;
+}
+
 .grid-container {
     width: 60%;
     text-align: center;
@@ -129,7 +133,7 @@ body {
 .grid-skills {
     width: 100%;
     max-width: 450px;
-    margin: auto;
+    margin: 30px auto 0px auto;
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     gap: 30px;
@@ -173,10 +177,11 @@ body {
         position: absolute;
         top: 60px;
         right: 0;
-        background: linear-gradient(to bottom, #63636300, #363636b5);
+        background: linear-gradient(to bottom, #36363621, #1E2930);
         width: 40%;
-        height: 26%;
+        height: 28%;
         border-radius: 0px 0px 15px 15px;
+        z-index: 10;
     }
 
     .navegation > .navegation-div {
@@ -188,8 +193,8 @@ body {
     }
 
     .navegation > .navegation-div > span {
-        padding: 5px;
-        transition: 0.3s; 
+        padding: 5px 35px;
+        transition: 0.3s;
         margin: 8px 0;
     }
 
@@ -220,5 +225,31 @@ body {
 
     #menu-toggle img {
         width: 52px;
+    }
+
+    .grid-container {
+        width: 90%;
+        text-align: center;
+        margin: 31px auto 0;
+        border-radius: 10px;
+    }
+
+    .grid-skills {
+        width: 100%;
+        max-width: 450px;
+        margin: 0px 3px 0px -8px;
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        gap: 42px 4px;
+        padding-bottom: 40px;
+        justify-content: center;
+        justify-items: center;
+        align-items: center;
+        align-content: center;
+    }
+
+    .grid-skills div {
+        width: 50px;
+        height: 59px;
     }
 }
