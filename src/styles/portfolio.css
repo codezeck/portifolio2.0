@@ -293,7 +293,14 @@
     }
 
     .navegation {
-        width: 50%;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        background: linear-gradient(to bottom, #36363621, #1E2930);
+        width: 40%;
+        height: 32%;
+        border-radius: 0px 0px 15px 15px;
+        z-index: 10;
     }
 
     .container-portifolio {

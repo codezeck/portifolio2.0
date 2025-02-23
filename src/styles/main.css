@@ -210,9 +210,12 @@ main > .img-avatar img {
 
 @media (max-width: 768px) {
     .div-logo {
-        width: 44%;
+        width: 25%;
+        display: flex;
         padding-right: 100px;
-    }
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+    }    
 
     .navegation {
         position: absolute;
@@ -220,7 +223,7 @@ main > .img-avatar img {
         right: 0;
         background: linear-gradient(to bottom, #36363621, #1E2930);
         width: 40%;
-        height: 28%;
+        height: 24%;
         border-radius: 0px 0px 15px 15px;
         z-index: 10;
     }
@@ -294,7 +297,7 @@ main > .img-avatar img {
         background-color: #ffffff00;
         border: 0px;
         width: 66px;
-        margin: 6px 0px 0px 0px;
+        margin: 10px -40px 0px 0px;
     }
 
     #menu-toggle img {
@@ -303,8 +306,15 @@ main > .img-avatar img {
 }
 
 @media (max-width: 480px) {
-    .div-logo {
+    .section-nav {
         width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .div-logo {
+        width: 40%;
         padding-right: 0;
         justify-content: center;
     }
@@ -315,7 +325,7 @@ main > .img-avatar img {
 
     .navegation {
         width: 100%;
-        height: auto;
+        height: 27%;
         top: 50px;
     }
 
@@ -341,6 +351,14 @@ main > .img-avatar img {
 
     .container-main button > a {
         padding: 10px 15px;
+    }
+
+    #menu-toggle {
+        display: block;
+        background-color: #ffffff00;
+        border: 0px;
+        width: 66px;
+        margin: 10px 0px 0px 0px;
     }
 }
 

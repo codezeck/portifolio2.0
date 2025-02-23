@@ -1,0 +1,197 @@
+/* arquivo de media queries globais */
+@charset "UTF-8";
+
+:root {
+    --fonte-principal: "Montserrat", serif;
+    --fonte-secundaria: Arial, Helvetica, sans-serif;
+    --cor-azul: #00EEFF;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+/* Large screens */
+@media (min-width: 1024px) {
+    .section-nav {
+        justify-content: space-between;
+        padding: 0 50px;
+    }
+
+    .div-logo {
+        width: 15%;
+    }
+
+    .navegation {
+        width: 60%;
+    }
+
+    .navegation > .navegation-div {
+        display: flex;
+        justify-content: space-around;
+        color: rgb(221, 221, 221);
+        margin-top: 30px;
+        margin: 30px 70px 0px 0px;
+        font-family: var(--fonte-secundaria);
+    }
+
+    main {
+        margin: 100px auto auto auto;
+    }
+
+    main > .container-main {
+        max-width: 600px;
+    }
+
+    main > .img-avatar {
+        max-width: 600px;
+    }
+
+    .container-main h1 {
+        font-size: 3rem;
+    }
+
+    .container-main h2 {
+        font-size: 2rem;
+    }
+
+    .container-main p {
+        font-size: 1.1rem;
+    }
+}
+
+/* Medium screens (tablets in landscape) */
+@media (min-width: 768px) and (max-width: 1023px) {
+    .section-nav {
+        justify-content: space-between;
+        padding: 0 50px;
+    }
+
+    .div-logo {
+        width: 20%;
+    }
+
+    #menu-toggle {
+        display: block;
+        background-color: #ffffff00;
+        border: 0px;
+        width: 66px;
+        margin: 6px 70px 0px 0px;
+    }
+
+    .navegation {
+        width: 50%;
+    }
+
+    .navegation > .navegation-div {
+        display: flex;
+        justify-content: space-around;
+        margin-top: 30px;
+        font-family: var(--fonte-secundaria);
+    }
+
+    main {
+        margin: 70px auto 0;
+    }
+
+    main > .container-main {
+        max-width: 550px;
+    }
+
+    main > .img-avatar {
+        max-width: 550px;
+    }
+}
+
+/* Small screens (tablets in portrait and smaller devices) */
+@media (max-width: 767px) {
+    .section-nav {
+        justify-content: space-between;
+        padding: 0 10px;
+    }
+
+    .div-logo {
+        width: 25%;
+    }
+
+    .navegation {
+        width: 60%;
+    }
+
+    .navegation > .navegation-div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 30px;
+    }
+
+    #menu-toggle {
+        display: block;
+        background-color: #ffffff00;
+        border: 0px;
+        width: 66px;
+        margin: 10px 10px 0px 0px;
+    }
+
+    #menu-toggle img {
+        width: 52px;
+    }
+
+    main {
+        display: flex;
+        margin: 0 auto;
+        padding: 0;
+        flex-wrap: wrap;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    main > .img-avatar {
+        width: 85%;
+        max-width: 380px;
+    }
+
+    main > .container-main {
+        width: 100%;
+        max-width: 500px;
+        margin: 30px 0 0;
+    }
+}
+
+/* Extra small screens (phones in portrait) */
+@media (max-width: 480px) {
+    .section-nav {
+        justify-content: space-between;
+    }
+
+    .div-logo {
+        width: 40%;
+    }
+
+    .navegation {
+        width: 100%;
+    }
+
+    .navegation > .navegation-div {
+        flex-direction: column;
+    }
+
+    main > .container-main h1 {
+        font-size: 2rem;
+    }
+
+    main > .container-main h2 {
+        font-size: 1.2rem;
+    }
+
+    .container-main p {
+        font-size: 0.9rem;
+    }
+
+    .container-main button,
+    .container-main button > a {
+        padding: 10px 15px;
+    }
+}

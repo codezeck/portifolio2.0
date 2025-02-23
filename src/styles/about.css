@@ -342,14 +342,40 @@
 }
 
 @media (max-width: 480px) {
+    
+
     .div-logo {
         width: 50%;
         padding-right: 0;
     }
 
     .navegation {
-        width: 50%;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        background: linear-gradient(to bottom, #36363621, #1E2930);
+        width: 40%;
+        height: 31%;
+        border-radius: 0px 0px 15px 15px;
+        z-index: 10;
     }
+
+    .navegation > .navegation-div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        margin: 0px;
+    }
+
+    .section-nav {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    
 
     .container-about .container-foto {
         width: 100%;
