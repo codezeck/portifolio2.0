@@ -136,7 +136,7 @@
 .grid-skills {
     width: 100%;
     max-width: 450px;
-    margin: 40px 3px 0px -8px;
+    margin: 0px 3px 0px -8px;
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     gap: 45px 40px;
